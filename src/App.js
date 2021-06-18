@@ -74,16 +74,16 @@ class App extends Component {
                             </p>
                             <div className="socials">
                                 <div className="social-logo">
-                                    <a href="https://www.linkedin.com/in/tim-t-walsh/" target="_blank"><img
+                                    <a href="https://www.linkedin.com/in/tim-t-walsh/" target="_blank" rel="noreferrer"><img
                                         src={linkedinlogo} class="logo-filter"/></a>
                                 </div>
                                 <div className="social-logo">
-                                    <a href="https://www.github.com/timtwalsh/" target="_blank"><img src={githublogo}
+                                    <a href="https://www.github.com/timtwalsh/" target="_blank" rel="noreferrer"><img src={githublogo}
                                                                                                      class="logo-filter"/></a>
                                 </div>
                             </div>
                             <div>
-                                <a href={"/timwalsh-resume.pdf"}>
+                                <a href={"/timwalsh-resume.pdf"} target={"_blank"} rel="noreferrer">
                                     <div className="resume-button">Resume</div>
                                 </a>
                             </div>
