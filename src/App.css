@@ -1,10 +1,8 @@
 .App {
   text-align: left;
+  overflow-x: hidden;
 }
-.project-logo {
-  height: 10rem;
-  pointer-events: none;
-}
+
 .socials {
   margin-left: 0;
   bottom: 0;
@@ -15,70 +13,6 @@
 }
 .logo-filter {
   filter: invert(10%);
-}
-
-.project {
-  background: #fff;
-  font-family: 'Source Code Pro', sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 300;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-bottom: 1rem;
-}
-
-.project-label {
-  padding-top: 1rem;
-  padding-left: 1rem;
-  font-family: 'Source Code Pro', sans-serif;
-  text-decoration: none;
-}
-
-.project-description {
-  padding-left: 1rem;
-}
-
-/* Example of how I will make
-backgrounds more interesting */
-.project:nth-of-type(6n+1) {
-  background:
-          radial-gradient(
-                  at bottom right,
-                  rgba(0, 0, 0, 0.66),
-                  transparent 200%
-          ),
-          radial-gradient(
-                  at bottom left,
-                  rgba(0, 0, 0, 0.66),
-                  transparent 200%
-          ),
-          radial-gradient(
-                  at top left,
-                  rgba(0, 255, 0, 0.75),
-                  transparent 66%
-          ),
-          radial-gradient(
-                  at top right,
-                  rgba(0, 255, 255, 0.75),
-                  transparent 66%
-          );
-}
-.project:nth-of-type(6n+2) {
-  background: #aaaa11;
-}
-
-.project:nth-of-type(6n+3) {
-  background: #11aa11;
-}
-.project:nth-of-type(6n+4) {
-  background: #11aaaa;
-}
-.project:nth-of-type(6n+5) {
-  background: #1111aa;
-}
-.project:nth-of-type(6n+6) {
-  background: #aa11aa;
 }
 
 .container {

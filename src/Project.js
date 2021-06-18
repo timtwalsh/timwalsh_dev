@@ -23,14 +23,38 @@ const ProjectItem = styled.div`
         ${props => props.bgRight || 'white'},
         transparent 66%
         );
-    color: ${props => props.fontColor || 'red'};
-    font-family: 'Source Code Pro', sans-serif;
-    font-size: 16px;
-    line-height: 24px;
-    font-weight: 300;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    padding-bottom: 1rem;
+  color: ${props => props.fontColor || 'red'};
+  font-family: 'Source Code Pro', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 300;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 1rem;
+`;
+
+const ProjectId = styled.div`
+  padding-top: 1.5rem;
+  padding-left: 1rem;
+  font-family: 'Source Code Pro', sans-serif;
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 500;
+`;
+
+const ProjectDesc = styled.div`
+  padding-left: 1.5rem;
+`;
+const ProjectHeader = styled.div`
+  padding-left: 1rem;
+  font-family: 'Source Code Pro', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  `;
+
+const ProjectLogo = styled.img`
+  height: 32rem;
+  pointer-events: none;
 `;
 
 class Project extends Component {
@@ -41,13 +65,10 @@ class Project extends Component {
     render() {
         return (
         <ProjectItem fontColor={this.projectItem.fontColor} bgLeft={this.projectItem.bgLeft} bgRight={this.projectItem.bgRight} bgBottom={this.projectItem.bgBottom}>
-            <div className={"project-label"}>
-                {this.projectItem.label}
-            </div>
-            <img src={this.projectItem.logo} className="project-logo" alt="logo" />
-            <div className={"project-description"}>
-                <p>{this.projectItem.description}</p>
-            </div>
+            <ProjectId>#{this.projectItem.id}</ProjectId>
+            <ProjectLogo src={this.projectItem.logo} alt={this.projectItem.label + ' logo'}/>
+            <ProjectHeader>{this.projectItem.label}</ProjectHeader>
+            <ProjectDesc>{this.projectItem.description}</ProjectDesc>
         </ProjectItem>
         );
     }
