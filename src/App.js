@@ -13,9 +13,10 @@ class App extends Component {
                 {
                     name: 'project0',
                     id: '0',
-                    bgLeft: '(255, 255, 150, 0.75)',
-                    BgRight: '(255, 255, 150, 0.75)',
-                    bgBottom: '(255, 255, 150, 0.75)',
+                    bgLeft: 'RGBA(150, 0, 0, 0.75)',
+                    bgRight: 'RGBA(255, 150, 0, 0.75)',
+                    bgBottom: 'RGBA(255, 255, 255, .8)',
+                    fontColor: 'RGBA(0, 0, 0, 1)',
                     label: 'tier king',
                     description: 'the king of projects',
                     logo: logo
@@ -23,9 +24,10 @@ class App extends Component {
                 {
                     name: 'project1',
                     id: '1',
-                    bgLeft: '(255, 255, 150, 0.75)',
-                    BgRight: '(255, 255, 150, 0.75)',
-                    bgBottom: '(255, 255, 150, 0.75)',
+                    bgLeft: 'RGBA(0, 255, 0, 0.75)',
+                    bgRight: 'RGBA(0, 255, 255, 0.75)',
+                    bgBottom: 'RGBA(0, 32, 32, .8)',
+                    fontColor: 'RGBA(255, 255, 255, 1)',
                     label: 'tier queen',
                     description: 'the queen of projects',
                     logo: logo
@@ -33,9 +35,10 @@ class App extends Component {
                 {
                     name: 'project2',
                     id: '2',
-                    bgLeft: '(255, 255, 150, 0.75)',
-                    BgRight: '(255, 255, 150, 0.75)',
-                    bgBottom: '(255, 255, 150, 0.75)',
+                    bgLeft: 'RGBA(255, 0, 255, 0.75)',
+                    bgRight: 'RGBA(255, 0, 128, 0.75)',
+                    bgBottom: 'RGBA(32, 0, 32, .8)',
+                    fontColor: 'RGBA(255, 255, 255, 1)',
                     label: 'tier jack',
                     description: 'the jack of projects',
                     logo: logo
@@ -43,9 +46,10 @@ class App extends Component {
                 {
                     name: 'project3',
                     id: '3',
-                    bgLeft: '(255, 255, 150, 0.75)',
-                    BgRight: '(255, 255, 150, 0.75)',
-                    bgBottom: '(255, 255, 150, 0.75)',
+                    bgLeft: 'RGBA(255, 255, 0, 0.75)',
+                    bgRight: 'RGBA(128, 255, 0, 0.75)',
+                    bgBottom: 'RGBA(32, 32, 0, 1)',
+                    fontColor: 'RGBA(255, 255, 255, 1)',
                     label: 'tier dunce',
                     description: 'the dunce of projects',
                     logo: logo
