@@ -6,6 +6,7 @@ import Project from './Project';
 import './App.css';
 import React, { Component } from 'react';
 
+
 class App extends Component {
     constructor(props) {
         super(props);
@@ -56,18 +57,14 @@ class App extends Component {
                     logo: logo
                 }],
         }
-    }
-
-    logState = () => {
-        console.log(this.state);
-    }
+    };
 
     render() {
         return (
             <div className="App">
-                <div onClick={this.logState()}></div>
                 <div class="container">
                     <div className="left-container">
+                        <div className={"left-content"}>
                             <h1 className="heading-tag">
                                 Problem solver.<br/>
                                 Tinkerer. <br/>
@@ -79,10 +76,10 @@ class App extends Component {
                             <div className="socials">
                                 <div className="social-logo">
                                     <a href="https://www.linkedin.com/in/tim-t-walsh/" target="_blank" rel="noreferrer"><img
-                                        src={linkedinlogo} class="logo-filter"/></a>
+                                        src={linkedinlogo} alt={"linkedin logo"} class="logo-filter"/></a>
                                 </div>
                                 <div className="social-logo">
-                                    <a href="https://www.github.com/timtwalsh/" target="_blank" rel="noreferrer"><img src={githublogo}
+                                    <a href="https://www.github.com/timtwalsh/" target="_blank" rel="noreferrer"><img src={githublogo} alt={"github logo"}
                                                                                                      class="logo-filter"/></a>
                                 </div>
                             </div>
@@ -91,11 +88,13 @@ class App extends Component {
                                     <div className="resume-button">Resume</div>
                                 </a>
                             </div>
+                        </div>
                     </div>
                     <div className="right-container">
                         {Object.keys(this.state.projectData).map(project =>
                             <Project class={project} key={project}
-                                     props={this.state.projectData[project]}></Project>
+                                     props={this.state.projectData[project]}>
+                            </Project>
                         )}
                     </div>
                 </div>
