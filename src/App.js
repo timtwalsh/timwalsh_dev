@@ -1,4 +1,5 @@
 import logo from './logo.svg';
+import angleassault from './angleassault.png'
 import linkedinlogo from './linkedin-logo.svg';
 import githublogo from './github-logo.svg';
 import Project from './Project';
@@ -12,7 +13,7 @@ class App extends Component {
             projectData: [
                 {
                     name: 'project0',
-                    id: '0',
+                    id: '00',
                     bgLeft: 'RGBA(255, 0, 255, 0.75)',
                     bgRight: 'RGBA(0, 0, 255, 0.75)',
                     bgBottom: 'RGBA(255, 255, 255, .8)',
@@ -22,19 +23,19 @@ class App extends Component {
                     logo: logo
                 },
                 {
-                    name: 'project1',
-                    id: '1',
-                    bgLeft: 'RGBA(128, 255, 196, 1)',
-                    bgRight: 'RGBA(0, 0, 255, 0.75)',
-                    bgBottom: 'RGBA(0, 64, 64, 1)',
+                    name: 'AngleAssault',
+                    id: '01',
+                    bgLeft: 'RGBA(247, 37, 133, 1)',
+                    bgRight: 'RGBA(76, 201, 240, 0.75)',
+                    bgBottom: 'RGBA(58, 12, 163, 1)',
                     fontColor: 'RGBA(255, 255, 255, 1)',
-                    label: 'queen',
-                    description: 'the queen of projects',
-                    logo: logo
+                    label: 'AngleAssault',
+                    description: 'angle assault description',
+                    logo: angleassault
                 },
                 {
                     name: 'project2',
-                    id: '2',
+                    id: '02',
                     bgLeft: 'RGBA(0, 255, 255, 0.75)',
                     bgRight: 'RGBA(128, 0, 255, 0.75)',
                     bgBottom: 'RGBA(0, 16, 32, 1)',
@@ -45,7 +46,7 @@ class App extends Component {
                 },
                 {
                     name: 'project3',
-                    id: '3',
+                    id: '03',
                     bgLeft: 'RGBA(255, 0, 255, 0.75)',
                     bgRight: 'RGBA(128, 0, 255, 0.75)',
                     bgBottom: 'RGBA(0, 0, 32, 1)',

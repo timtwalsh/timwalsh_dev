@@ -53,6 +53,7 @@ const ProjectHeader = styled.div`
   `;
 
 const ProjectLogo = styled.img`
+  margin: 3rem;
   height: 32rem;
   pointer-events: none;
 `;
