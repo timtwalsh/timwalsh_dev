@@ -52,10 +52,14 @@ const ProjectHeader = styled.div`
   font-weight: 700;
   `;
 
-const ProjectLogo = styled.img`
-  margin: 3rem;
-  height: 32rem;
+const ProjectLogo = styled.div`
+  margin: 2rem;
+  height: 40rem;
   pointer-events: none;
+  background-image: url(${props => props.image});
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
 `;
 
 class Project extends Component {
@@ -67,7 +71,7 @@ class Project extends Component {
         return (
         <ProjectItem fontColor={this.projectItem.fontColor} bgLeft={this.projectItem.bgLeft} bgRight={this.projectItem.bgRight} bgBottom={this.projectItem.bgBottom}>
             <ProjectId>#{this.projectItem.id}</ProjectId>
-            <ProjectLogo src={this.projectItem.logo} alt={this.projectItem.label + ' logo'}/>
+            <ProjectLogo image={this.projectItem.logo}/>
             <ProjectHeader>{this.projectItem.label}</ProjectHeader>
             <ProjectDesc>{this.projectItem.description}</ProjectDesc>
         </ProjectItem>
