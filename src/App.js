@@ -68,7 +68,6 @@ class App extends Component {
                 <div onClick={this.logState()}></div>
                 <div class="container">
                     <div className="left-container">
-                        <div className="left-content">
                             <h1 className="heading-tag">
                                 Problem solver.<br/>
                                 Tinkerer. <br/>
@@ -92,7 +91,6 @@ class App extends Component {
                                     <div className="resume-button">Resume</div>
                                 </a>
                             </div>
-                        </div>
                     </div>
                     <div className="right-container">
                         {Object.keys(this.state.projectData).map(project =>
