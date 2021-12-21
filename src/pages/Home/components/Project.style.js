@@ -1,7 +1,6 @@
-import React, { Component } from 'react';
 import styled from "styled-components";
 
-const ProjectItem = styled.div`
+export const ProjectItem = styled.div`
     background: 
         radial-gradient(
         at bottom right,
@@ -33,7 +32,7 @@ const ProjectItem = styled.div`
   padding-bottom: 1rem;
 `;
 
-const ProjectId = styled.div`
+export const ProjectId = styled.div`
   padding-top: 1.5rem;
   padding-left: 1rem;
   font-family: 'Source Code Pro', sans-serif;
@@ -42,17 +41,19 @@ const ProjectId = styled.div`
   font-weight: 500;
 `;
 
-const ProjectDesc = styled.div`
+export const ProjectDesc = styled.div`
   padding-left: 1.5rem;
 `;
-const ProjectHeader = styled.div`
+
+export const ProjectHeader = styled.div`
   padding-left: 1rem;
   font-family: 'Source Code Pro', sans-serif;
   font-size: 24px;
   font-weight: 700;
   `;
 
-const ProjectLogo = styled.div`
+
+export const ProjectLogo = styled.div`
   margin: 2rem;
   height: 40rem;
   pointer-events: none;
@@ -61,22 +62,3 @@ const ProjectLogo = styled.div`
   background-size: contain;
   background-position: center;
 `;
-
-class Project extends Component {
-    constructor(props) {
-        super(props);
-        this.projectItem = this.props.props
-    }
-    render() {
-        return (
-        <ProjectItem fontColor={this.projectItem.fontColor} bgLeft={this.projectItem.bgLeft} bgRight={this.projectItem.bgRight} bgBottom={this.projectItem.bgBottom}>
-            <ProjectId>#{this.projectItem.id}</ProjectId>
-            <ProjectLogo image={this.projectItem.logo}/>
-            <ProjectHeader>{this.projectItem.label}</ProjectHeader>
-            <ProjectDesc>{this.projectItem.description}</ProjectDesc>
-        </ProjectItem>
-        );
-    }
-};
-
-export default Project;
