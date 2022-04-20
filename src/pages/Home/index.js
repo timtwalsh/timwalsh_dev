@@ -32,7 +32,7 @@ class Home extends Component {
                     label: 'VoTourney',
                     description: 'A React-JS based dynamic tournament bracket generator crowd-sourcing decisions. (Full-Stack MVP)',
                     logo: votourney,
-                    link: 'https://votourney.timwalsh.dev'
+                    link: 'https://votourney.timwalsh.dev/bracket/new'
                 },
                 {
                     name: 'AngleAssault',
