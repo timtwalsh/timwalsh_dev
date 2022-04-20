@@ -56,7 +56,7 @@ class Home extends Component {
                     label: 'timwalsh.Dev',
                     description: 'This site, built with React-JS and simple Styled-Components.',
                     logo: logo,
-                    link: '/'
+                    link: 'https://github.com/timtwalsh/timwalsh_dev'
                 },
                 // {
                 //     name: 'project3',
