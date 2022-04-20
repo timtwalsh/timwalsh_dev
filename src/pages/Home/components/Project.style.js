@@ -50,6 +50,8 @@ export const ProjectHeader = styled.div`
   font-family: 'Source Code Pro', sans-serif;
   font-size: 24px;
   font-weight: 700;
+  text-decoration: none;
+  color: ${props => props.fontColor || 'red'};
   `;
 
 

@@ -19,7 +19,7 @@ class Project extends Component {
                          bgRight={this.projectItem.bgRight} bgBottom={this.projectItem.bgBottom}>
                 <ProjectId>#{this.projectItem.id}</ProjectId>
                 <ProjectLogo image={this.projectItem.logo}/>
-                <ProjectHeader>{this.projectItem.label}</ProjectHeader>
+                <a href={this.projectItem.link}><ProjectHeader fontColor={this.projectItem.fontColor}>{this.projectItem.label}</ProjectHeader></a>
                 <ProjectDesc>{this.projectItem.description}</ProjectDesc>
             </ProjectItem>
         );

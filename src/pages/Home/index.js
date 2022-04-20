@@ -31,7 +31,8 @@ class Home extends Component {
                     fontColor: 'RGBA(255, 255, 255, 1)',
                     label: 'VoTourney',
                     description: 'A React-JS based dynamic tournament bracket generator crowd-sourcing decisions. (Full-Stack MVP)',
-                    logo: votourney
+                    logo: votourney,
+                    link: 'https://votourney.timwalsh.dev'
                 },
                 {
                     name: 'AngleAssault',
@@ -42,7 +43,8 @@ class Home extends Component {
                     fontColor: 'RGBA(255, 255, 255, 1)',
                     label: 'AngleAssault',
                     description: 'An Android mini-game designed to teach various angle names in an engaging and fun way. (Android Project)',
-                    logo: angleassault
+                    logo: angleassault,
+                    link: 'https://github.com/timtwalsh/AngleAssault-android'
                 },
                 {
                     name: 'timwalsh.dev',
@@ -53,7 +55,8 @@ class Home extends Component {
                     fontColor: 'RGBA(255, 255, 255, 1)',
                     label: 'timwalsh.Dev',
                     description: 'This site, built with React-JS and simple Styled-Components.',
-                    logo: logo
+                    logo: logo,
+                    link: '/'
                 },
                 // {
                 //     name: 'project3',
@@ -64,7 +67,8 @@ class Home extends Component {
                 //     fontColor: 'RGBA(255, 255, 255, 1)',
                 //     label: 'dunce',
                 //     description: 'the dunce of projects',
-                //     logo: logo
+                //     logo: logo,
+                //     link: '/'
                 // }
             ],
         }
