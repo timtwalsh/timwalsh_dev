@@ -113,7 +113,7 @@ export const ResumeButton = styled.div`
   background-color: #fff;
   border: #333 solid;
   color: #333;
-  width: 5rem;
+  width: auto;
   margin: .75rem 0 1rem 0;
   padding: .5rem;
   text-align: center;
